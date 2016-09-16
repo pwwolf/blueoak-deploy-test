@@ -1,0 +1,24 @@
+{
+  "express": {
+    "middleware": [
+      "csrf",
+      "cors",
+      "body-parser"
+    ]
+  },
+  "cluster": {
+    "maxWorkers": 1
+  },
+  "csrf": {
+    "allowedOrigins": [
+      "http://localhost:3000",
+      "chrome-extension://aicmkgpgakddgnaphhhpliifpcfhicfo"
+    ]
+  },
+  "cors": {
+    "origin": "http://example.com"
+  },
+  "body-parser": {
+    "json": {}
+  }
+}
